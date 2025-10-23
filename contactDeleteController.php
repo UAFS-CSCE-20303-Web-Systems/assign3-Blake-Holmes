@@ -10,7 +10,7 @@
     $method=$_SERVER['REQUEST_METHOD'];
     //* Process HTTP GET Request
     if($method=='GET'){
-        include "views/contactList-view.php";
+        include "views/contactDelete-view.php";
     }
     
     //* Process HTTP POST Request
@@ -18,7 +18,8 @@
         $contactID= $_POST['contactID'];
         $contactDAO = new ContactDAO();
         $contactDAO->deleteContact($contactID);
-        include "views/contactList-view.php";
+        header("Location: contactListController.php");
+        exit;
     }
 
 

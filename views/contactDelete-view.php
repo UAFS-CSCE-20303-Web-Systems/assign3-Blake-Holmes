@@ -22,7 +22,7 @@
                         <h5 class="card-title">WARNING</h5>
                         <p class="card-text">Are you sure?</p>
                         <form action="contactDeleteController.php" method="POST">
-                            <input type="hidden" value="$contacts[$index]->contactID">
+                            <input type="hidden" name="contactID" value="?php echo $contactID;?>">
                             <td><a href="contactDeleteController.php?contactID=<?php echo $contacts[$index]->contactID?>" class="btn btn-warning">Delete </a> </td>
                         </form>
                     </div>
