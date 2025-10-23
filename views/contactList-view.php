@@ -34,7 +34,6 @@
                         <td><?php echo $contacts[$index]->email ?></td>
                         <td><a href="contactUpdateController.php?contactID=<?php echo $contacts[$index]->contactID?>" class="btn btn-secondary">Update </a> </td>
                         <td><a href="contactDeleteController.php?contactID=<?php echo $contacts[$index]->contactID?>" class="btn btn-warning">Delete </a> </td>
-                        
                     </tr>
                     <?php
                         }
@@ -42,9 +41,6 @@
                 </tbody>
             </table>
         </div>
-
-
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
