@@ -15,7 +15,7 @@
             </div>
         </nav>
         <div class="container">
-            <a href="contactAddController.php" class="btn btn-primary">Add Contact</a>
+            <a href="contactAddController.php" class="btn btn-secondary">Add Contact</a>
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -32,6 +32,9 @@
                         <td><?php echo $contacts[$index]->contactID ?></td>
                         <td><?php echo $contacts[$index]->username ?></td>
                         <td><?php echo $contacts[$index]->email ?></td>
+                        <td><a href="contactUpdateController.php?contactID=<?php echo $contacts[$index]->contactID?>" class="btn btn-secondary">Update </a> </td>
+                        <td><a href="contactDeleteController.php?contactID=<?php echo $contacts[$index]->contactID?>" class="btn btn-warning">Delete </a> </td>
+                        
                     </tr>
                     <?php
                         }
